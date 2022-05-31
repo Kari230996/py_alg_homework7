@@ -46,7 +46,7 @@ def merge_sort(num):
 
 
 N = 10
-num = [randint(0, 50) for i in range(N)]
+num = [float(randint(0, 49)) for i in range(N)]
 merge_sort(num)
 
 print('Отсортированный список по возрастанию методом слияния:', num)

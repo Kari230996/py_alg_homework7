@@ -10,7 +10,7 @@ import random
 import timeit
 
 SIZE = 10
-lst = [random.randint(-100, 100) for i in range(SIZE)]
+lst = [random.randint(-100, 99) for i in range(SIZE)]
 
 
 
@@ -44,7 +44,7 @@ def updated_bubble_sort():
 
                 flag = False
 
-        if flag == True:
+        if flag:
             break
 
 

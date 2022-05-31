@@ -8,7 +8,7 @@
 # которые не меньше медианы, в другой — не больше медианы.
 
 import random
-
+from itertools import groupby
 
 def mediana(l, k):
     if len(l) == 0:
@@ -37,6 +37,7 @@ def mediana(l, k):
 
 m = 11
 l = [random.randint(0, 100) for _ in range(2 + m + 1)]
+l = list(set(l))
 print('Исхондый массив:', l)
 print('Медиана данного массива:', mediana(l, m))
 
